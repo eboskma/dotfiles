@@ -49,7 +49,6 @@ bindkey '\e.' insert-last-word
 
 #Set git editor to TextMate
 #export GIT_EDITOR="mate --name 'Git Commit Message' -w -l 1"
-export EDITOR="subl -w -n"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -65,5 +64,4 @@ function gi() {
 # Include psql from Postgres.app
 export PATH="/Applications/Postgres93.app/Contents/MacOS/bin":$PATH
 
-export AWS_ACCESS_KEY_ID=AKIAJ24OKP3Y3KIZ2J5Q
-export AWS_SECRET_ACCESS_KEY=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
+export EDITOR=vim
