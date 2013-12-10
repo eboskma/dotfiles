@@ -29,22 +29,26 @@ plugins=(git brew ssh-agent bundler)
 source $ZSH/oh-my-zsh.sh
 
 ### AWS
-export EC2_HOME=$HOME/AWS/ec2
-export EC2_PRIVATE_KEY="$(ls $HOME/.ec2/x509-yb-keypair)"
-export EC2_CERT="$(ls $HOME/.ec2/cert-yb.pem)"
-export EC2_REGION=eu-west-1
-export EC2_URL=https://eu-west-1.ec2.amazonaws.com
-export AWS_AUTO_SCALING_HOME=$HOME/AWS/as
-export AWS_CLOUDWATCH_HOME=$HOME/AWS/cw
-export AWS_AMITOOLS_HOME=$HOME/AWS/ami
-export AWS_SNS_HOME=$HOME/AWS/sns
-export AWS_RDS_HOME=$HOME/AWS/rds
-export AWS_IAM_HOME=$HOME/AWS/iam
-export AWS_CREDENTIAL_FILE=/Users/erwin/.ec2/aws-credentials
-export AWS_AUTOSCALING_URL=https://autoscaling.eu-west-1.amazonaws.com
+if [ -d $HOME/AWS ]; then
+	export EC2_HOME=$HOME/AWS/ec2
+	export EC2_PRIVATE_KEY="$(ls $HOME/.ec2/x509-yb-keypair)"
+	export EC2_CERT="$(ls $HOME/.ec2/cert-yb.pem)"
+	export EC2_REGION=eu-west-1
+	export EC2_URL=https://eu-west-1.ec2.amazonaws.com
+	export AWS_AUTO_SCALING_HOME=$HOME/AWS/as
+	export AWS_CLOUDWATCH_HOME=$HOME/AWS/cw
+	export AWS_AMITOOLS_HOME=$HOME/AWS/ami
+	export AWS_SNS_HOME=$HOME/AWS/sns
+	export AWS_RDS_HOME=$HOME/AWS/rds
+	export AWS_IAM_HOME=$HOME/AWS/iam
+	export AWS_CREDENTIAL_FILE=/Users/erwin/.ec2/aws-credentials
+	export AWS_AUTOSCALING_URL=https://autoscaling.eu-west-1.amazonaws.com
 
-#Customize to your needs...
-PATH=$AWS_IAM_HOME/bin:$AWS_RDS_HOME/bin:$AWS_SNS_HOME/bin:$EC2_HOME/bin:$AWS_AUTO_SCALING_HOME/bin:$AWS_CLOUDWATCH_HOME/bin:$AWS_AMITOOLS_HOME/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin:/usr/local/sbin:/usr/local/lib/node_modules:$HOME/bin:$HOME/.local/bin:$PATH
+	#Customize to your needs...
+	PATH=$AWS_IAM_HOME/bin:$AWS_RDS_HOME/bin:$AWS_SNS_HOME/bin:$EC2_HOME/bin:$AWS_AUTO_SCALING_HOME/bin:$AWS_CLOUDWATCH_HOME/bin:$AWS_AMITOOLS_HOME/bin:$PATH
+fi
+
+PATH=/usr/local/share/npm/bin:/usr/local/sbin:/usr/local/lib/node_modules:$HOME/bin:$HOME/.local/bin:$PATH
 bindkey '\e.' insert-last-word
 
 #Set git editor to TextMate
@@ -53,8 +57,10 @@ bindkey '\e.' insert-last-word
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-### Set JAVA_HOME
-export JAVA_HOME=$(/usr/libexec/java_home)
+if [ -x /usr/libexec/java_home ]; then
+	### Set JAVA_HOME
+	export JAVA_HOME=$(/usr/libexec/java_home)
+fi
 
 # gitignore.io integration
 function gi() {
