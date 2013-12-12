@@ -26,5 +26,5 @@ if exists("+showtabline")
     let s .= (tabpagenr('#') > 1 ? '%999XX' : 'X')
     return s
   endfunction
-  set tabline = %!MyTabLine()
+  set tabline=%!MyTabLine()
 endif
