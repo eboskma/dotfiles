@@ -1,0 +1,36 @@
+# ~/.tmuxinator/surroundvideo.yml
+
+name: surroundvideo
+root: ~/Projects/surroundvideo
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+# pre: sudo /etc/rc.d/mysqld start
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+windows:
+  - editor:
+      layout: acd8,318x75,0,0[318x57,0,0,0,318x17,0,58{159x17,0,58,2,158x17,160,58,3}]
+      panes:
+        - vim
+        - pry
+        - pry
+#  - console:
+#      panes:
+#        - #empty (shell)
+#        - #rails_console: zeus console
+#  - background: 
+#      panes:
+#        - #sidekiq: bundle exec sidekiq -C config/sidekiq.yml -P tmp/sidekiq.pid -v
+#        - #zeus: zeus start
+#  - logs: tail -f log/development.log
