@@ -25,6 +25,7 @@ set splitbelow
 set splitright
 set undolevels=500
 set wildmenu
+set cursorline
 
 set expandtab
 set tabstop=2
