@@ -1,17 +1,16 @@
-# ~/.tmuxinator/angular-blog.yml
+# ~/.tmuxinator/surroundvideo_console.yml
 
-name: angular-blog
-root: ~/projects/personal/angular-blog
+name: surroundvideo_console
+root: ~/Projects/surroundvideo
 
 # Optional tmux socket
 # socket_name: foo
 
 # Runs before everything. Use it to start daemons etc.
 # pre: sudo /etc/rc.d/mysqld start
-pre: bundle install
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-# pre_window: rbenv shell 2.0.0-p247
+pre_window: rbenv shell 2.0.0-p247
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
@@ -20,14 +19,12 @@ pre: bundle install
 # tmux_command: byobu
 
 windows:
-  - editor:
-      layout: 95b3,318x75,0,0[318x57,0,0,0,318x17,0,58,1]
-      panes: 
-        - vim .
-        - zeus console
-  - server: 
-      layout: even-horizontal
+  - zeus:
+      layout: 0124,318x75,0,0{159x75,0,0[159x37,0,0,0,159x37,0,38,5],158x75,160,0[158x37,160,0,3,158x37,160,38,4]}
       panes:
         - zeus start
-        - guard
-  - logs: tail -f logs/development.log
+        - zeus console
+        - zeus dbconsole
+        - #
+  - log: tail -f log/development.log
+  - guard: bundle exec guard
