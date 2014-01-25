@@ -4,6 +4,7 @@ let g:NERDTreeChDirMode=2
 let g:NERDTreeWinPos="right"
 
 let g:ctrlp_use_caching=0
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|tmp\|log\|bower_components'
 
 let g:rspec_command="Dispatch rspec {spec}"
 

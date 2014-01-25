@@ -1,11 +1,12 @@
 ---
 :backtrace: false
-:benchmark: false
 :bulk_threshold: 1000
 :sources:
 - http://rubygems.org/
 - http://gemcutter.org
+- https://rails-assets.org
 :update_sources: true
 :verbose: true
+benchmark: false
 search: --remote
 install: --no-rdoc --no-ri
