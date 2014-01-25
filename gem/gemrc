@@ -1,10 +1,8 @@
----
 :backtrace: false
 :bulk_threshold: 1000
 :sources:
-- http://rubygems.org/
-- http://gemcutter.org
 - https://rails-assets.org
+- https://rubygems.org/
 :update_sources: true
 :verbose: true
 benchmark: false

@@ -22,6 +22,7 @@ Bundle 'nono/vim-handlebars'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'jnwhiteh/vim-golang'
 
 " Utilities
 Bundle 'scrooloose/nerdtree'
