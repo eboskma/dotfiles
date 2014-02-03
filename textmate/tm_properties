@@ -1,1 +1,1 @@
-excludeDirectories = "{$excludeDirectories,node_modules/*,bower_components/*,vendor/Pods}"
+excludeDirectories = "{$excludeDirectories,node_modules/*,bower_components/*,vendor/Pods,build/*}"

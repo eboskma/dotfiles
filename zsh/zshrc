@@ -64,7 +64,7 @@ fi
 
 # gitignore.io integration
 function gi() {
-	curl -s http://gitignore.io/api/$@
+	curl -s http://www.gitignore.io/api/$@
 }
 
 # Include psql from Postgres.app
