@@ -38,5 +38,6 @@
 	lola = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
   ls = ls-files
   ign = ls-files -o -i --exclude-standard
+	up = "!git remote update -p; git merge --ff-only @{u}"
 [gitsh]
 	defaultCommand = status -bs
