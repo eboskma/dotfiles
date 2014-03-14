@@ -1,1 +1,3 @@
 excludeDirectories = "{$excludeDirectories,node_modules/*,bower_components/*,vendor/Pods,build/*,tmp/*,log/*}"
+include={$include,.*}
+exclude={$exclude,.git}
