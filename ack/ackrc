@@ -1,0 +1,9 @@
+--type-add=ruby=.haml
+--type-add=objc=.pch
+--type-set=xcode=.pbxproj,.pbxuser,.perspectivev3
+--type-set=nib=.xib
+--type-set=plist=.plist
+--type-set=tmstuff=.tm_properties
+--nonib
+--notmstuff
+--noxcode
