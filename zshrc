@@ -27,7 +27,7 @@ COMPLETION_WAITING_DOTS="false"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow brew ssh-agent bundler tmux)
+plugins=(git git-flow brew ssh-agent bundler zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -81,3 +81,6 @@ export EDITOR=vim
 
 # Aliases
 alias away='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+
+# Add GNU core utils from Homebrew to the path
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:${PATH}"
