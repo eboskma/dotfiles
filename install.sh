@@ -24,6 +24,9 @@ function install_generic() {
   #   echo "Not installing then dotfile symlinks. Run 'rcup' to do this at a later time."
   # fi
   
+  # Install Oh My ZSH
+  git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+  
   # Install and load Vim plugins
   git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
   vim +PluginInstall +qall
