@@ -83,4 +83,4 @@ export EDITOR=vim
 alias away='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 
 # Add GNU core utils from Homebrew to the path
-which brew && export PATH="$(brew --prefix coreutils)/libexec/gnubin:${PATH}"
+which brew &> /dev/null && export PATH="$(brew --prefix coreutils)/libexec/gnubin:${PATH}"

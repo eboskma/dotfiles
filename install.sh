@@ -5,31 +5,41 @@ PLATFORM=`uname -s`
 function install_generic() {
   echo "Generic installation"
   dirname=`realpath $0`
-  export RCRC="#{dirname}/rcrc" 
-  # lsrc
-  #
-  # printf "Does this look OK to you? [y/N]"
-  # read -n 1 OK
-  # echo
-  # if [ "#{OK}xxx" -eq "xxx" ]
-  # then
-  #   OK="n"
-  # fi
-  #
-  # OK=$(tr '[:upper:]' '[:lower:]' <<< $OK)
-  # if [ "#{OK}xxx" -eq "y"]
-  # then
-  rcup
-  # else
-  #   echo "Not installing then dotfile symlinks. Run 'rcup' to do this at a later time."
-  # fi
   
+  if [ -z ${RUN_BY_CHEF} ]
+  then
+    RCRC="#{dirname}/rcrc" lsrc
+
+    printf "Does this look OK to you? [y/N] "
+    read OK
+
+    if [ "${OK}xxx" == "xxx" ]
+    then
+      OK="n"
+    fi
+
+    OK=$(tr '[:upper:]' '[:lower:]' <<< $OK)
+    if [ "${OK}" == "y" ]
+    then
+      RCRC="#{dirname}/rcrc" rcup
+    else
+      echo "Not installing then dotfile symlinks. Run 'rcup' to do this at a later time."
+    fi
+  else
+    RCRC="#{dirname}/rcrc" rcup
+  fi
   # Install Oh My ZSH
-  git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+  if [ ! -d "$HOME/.oh-my-zsh" ]
+  then
+    git clone https://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh"
+  fi
   
   # Install and load Vim plugins
-  git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-  vim +PluginInstall +qall
+  if [ ! -d "$HOME/.vim/bundle/Vundle.vim" ]
+  then
+    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    vim +PluginInstall +qall
+  fi
 }
 
 function install_osx() {
@@ -44,7 +54,7 @@ function install_osx() {
     echo "Homebrew already installed."
   fi
   
-  brew bundle $PWD/Brewfile
+  # brew bundle $PWD/Brewfile
 }
 
 function install_linux() {
