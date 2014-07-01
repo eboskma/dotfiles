@@ -6,23 +6,23 @@ function install_generic() {
   echo "Generic installation"
   dirname=`realpath $0`
   export RCRC="#{dirname}/rcrc" 
-  lsrc
-  
-  printf "Does this look OK to you? [y/N]"
-  read -n 1 OK
-  echo
-  if [ "#{OK}xxx" -eq "xxx" ]
-  then
-    OK="n"
-  fi
-  
-  OK=$(tr '[:upper:]' '[:lower:]' <<< $OK)
-  if [ "#{OK}xxx" -eq "y"]
-  then
-    rcup
-  else
-    echo "Not installing then dotfile symlinks. Run 'rcup' to do this at a later time."
-  fi
+  # lsrc
+  #
+  # printf "Does this look OK to you? [y/N]"
+  # read -n 1 OK
+  # echo
+  # if [ "#{OK}xxx" -eq "xxx" ]
+  # then
+  #   OK="n"
+  # fi
+  #
+  # OK=$(tr '[:upper:]' '[:lower:]' <<< $OK)
+  # if [ "#{OK}xxx" -eq "y"]
+  # then
+  rcup
+  # else
+  #   echo "Not installing then dotfile symlinks. Run 'rcup' to do this at a later time."
+  # fi
 }
 
 function install_osx() {
