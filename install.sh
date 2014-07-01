@@ -21,17 +21,17 @@ function install_generic() {
     OK=$(tr '[:upper:]' '[:lower:]' <<< $OK)
     if [ "${OK}" == "y" ]
     then
-      RCRC="#{dirname}/rcrc" rcup
+      RCRC="${dirname}/rcrc" rcup
     else
       echo "Not installing then dotfile symlinks. Run 'rcup' to do this at a later time."
     fi
   else
-    RCRC="#{dirname}/rcrc" rcup
+    RCRC="${dirname}/rcrc" rcup
   fi
   # Install Oh My ZSH
-  if [ ! -d "$HOME/.oh-my-zsh" ]
+  if [ ! -d "${dirname}/.oh-my-zsh" ]
   then
-    git clone https://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh"
+    git clone https://github.com/robbyrussell/oh-my-zsh.git "${dirname}/.oh-my-zsh"
   fi
   
   # Install and load Vim plugins
