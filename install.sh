@@ -23,6 +23,10 @@ function install_generic() {
   # else
   #   echo "Not installing then dotfile symlinks. Run 'rcup' to do this at a later time."
   # fi
+  
+  # Install and load Vim plugins
+  git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  vim +PluginInstall +qall
 }
 
 function install_osx() {
