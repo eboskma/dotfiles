@@ -69,6 +69,7 @@ function install_linux() {
   
   curl -Lo /tmp/${debname} https://thoughtbot.github.io/rcm/debs/${debname}
   sudo dpkg -i /tmp/${debname}
+  rm /tmp/${debname}
 }
 
 case $PLATFORM in
