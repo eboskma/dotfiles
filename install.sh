@@ -28,12 +28,6 @@ function install_generic() {
   else
     RCRC="${dirname}/rcrc" rcup
   fi
-  # Install Oh My ZSH
-  if [ ! -d "${dirname}/.oh-my-zsh" ]
-  then
-    git clone https://github.com/robbyrussell/oh-my-zsh.git "${dirname}/.oh-my-zsh"
-  fi
-  
   # Install and load Vim plugins
   if [ ! -d "$HOME/.vim/bundle/Vundle.vim" ]
   then
