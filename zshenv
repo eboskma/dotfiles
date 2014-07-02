@@ -1,3 +1,5 @@
+test -d /opt/chef && export PATH=/opt/chef/bin:$PATH
+
 if [ -d "$HOME/.rbenv" ]
 then
   export PATH="$HOME/.rbenv/bin:$PATH"
@@ -9,3 +11,4 @@ which direnv &> /dev/null && eval "$(direnv hook zsh)"
 
 export GOPATH="$HOME/.gopkg"
 export PATH="$GOPATH/bin:$PATH"
+

@@ -1,2 +1,5 @@
+require 'awesome_print'
+
 Pry.config.theme = 'railscasts'
-#Pry.config.color = false
+
+AwesomePrint.pry!

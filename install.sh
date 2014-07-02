@@ -2,32 +2,15 @@
 
 PLATFORM=`uname -s`
 
+function install_links() {
+  
+}
+
 function install_generic() {
   echo "Generic installation"
   dirname=`realpath $0`
   
-  if [ -z ${RUN_BY_CHEF} ]
-  then
-    RCRC="#{dirname}/rcrc" lsrc
-
-    printf "Does this look OK to you? [y/N] "
-    read OK
-
-    if [ "${OK}xxx" == "xxx" ]
-    then
-      OK="n"
-    fi
-
-    OK=$(tr '[:upper:]' '[:lower:]' <<< $OK)
-    if [ "${OK}" == "y" ]
-    then
-      RCRC="${dirname}/rcrc" rcup
-    else
-      echo "Not installing then dotfile symlinks. Run 'rcup' to do this at a later time."
-    fi
-  else
-    RCRC="${dirname}/rcrc" rcup
-  fi
+  install_links
   # Install and load Vim plugins
   if [ ! -d "$HOME/.vim/bundle/Vundle.vim" ]
   then
@@ -59,11 +42,11 @@ function install_linux() {
     sudo apt-get -y install curl coreutils realpath
   fi
   
-  debname="rcm_1.2.3-1_all.deb"
-  
-  curl -Lo /tmp/${debname} https://thoughtbot.github.io/rcm/debs/${debname}
-  sudo dpkg -i /tmp/${debname}
-  rm /tmp/${debname}
+  # debname="rcm_1.2.3-1_all.deb"
+  #
+  # curl -Lo /tmp/${debname} https://thoughtbot.github.io/rcm/debs/${debname}
+  # sudo dpkg -i /tmp/${debname}
+  #  rm /tmp/${debname}
 }
 
 case $PLATFORM in

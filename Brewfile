@@ -33,8 +33,8 @@ install rename
 install tree
 
 # RCM
-tap thoughtbot/formulae
-install rcm
+# tap thoughtbot/formulae
+# install rcm
 
 # Remove outdated versions from the cellar
 cleanup
