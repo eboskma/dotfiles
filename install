@@ -4,19 +4,23 @@ require 'thor'
 
 class Dotfiles < Thor
   desc "dotfiles", "Install all the dotfiles!"
+  method_option :non_interactive, type: :boolean, default: false, aliases: "-n", desc: "Run non-interactively, existing files will be skipped by default"
+  method_option :replace_all, type: :boolean, default: false, aliases: "-r", desc: "Replace all existing files"
   def dotfiles
-    replace_all = false
-    
     files = DIR['*'] - %w[Brewfile README.md LICENSE install.sh Thorfile]
+    replace_all = options[:replace_all]
+    non_interactive = options[:non_interactive]
     
     files.each do |file|
       dest_file = File.join(ENV['HOME'], ".#{file}")
-      system %Q{mkdir -p "$HOME/.#{File.dirname(file)}"} if file =~ /\//
+      # system %Q{mkdir -p "$HOME/.#{File.dirname(file)}"} if file =~ /\//
       if File.exists?(dest_file)
-        if File.identical? file, File.join(dest_file)
+        if File.identical? file, dest_file
           puts "identical ~/.#{file}"
         elsif replace_all
           replace_file(file)
+        elsif non_interactive
+          puts "skipping ~/.#{file}"
         else
           print "overwrite ~/.#{file}? [ynaq] "
           case stdin.gets.chomp
@@ -26,7 +30,7 @@ class Dotfiles < Thor
           when 'y'
             replace_file(file)
           when 'q'
-            exit
+            exit 0
           else
             puts "skipping ~/.#{file}"
           end
@@ -35,6 +39,11 @@ class Dotfiles < Thor
         link_file(file)
       end
     end
+  end
+  
+  desc "software", "Install the apropriate software"
+  def software
+    
   end
   
   private

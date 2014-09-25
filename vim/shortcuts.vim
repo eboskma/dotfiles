@@ -10,6 +10,9 @@ noremap <leader>j <C-w>j
 noremap <leader>k <C-w>k
 noremap <leader>l <C-w>l
 
+noremap <leader>s <C-w>s
+noremap <leader>v <C-w>v
+
 noremap <leader>[ :tabp<cr>
 noremap <leader>] :tabn<cr>
 

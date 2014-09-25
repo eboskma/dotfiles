@@ -2,3 +2,4 @@
 !/vim/tmp/.keep
 /vim/undo/*
 !/vim/undo/.keep
+/vim/bundle

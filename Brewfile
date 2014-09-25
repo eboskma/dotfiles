@@ -31,9 +31,10 @@ install pigz
 install pv
 install rename
 install tree
+install direnv
 
-# RCM
-# tap thoughtbot/formulae
+tap thoughtbot/formulae
+install gitsh
 # install rcm
 
 # Remove outdated versions from the cellar

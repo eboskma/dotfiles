@@ -36,7 +36,7 @@ Bundle 'tpope/vim-dispatch'
 Bundle 'airblade/vim-gitgutter'
 
 " Look-and-feel stuff
-Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'bling/vim-airline'
 
 source $HOME/.vim/colors.vim
