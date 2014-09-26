@@ -27,6 +27,7 @@ set undolevels=500
 set wildmenu
 set cursorline
 set relativenumber
+set encoding=utf-8
 
 set expandtab
 set tabstop=2
