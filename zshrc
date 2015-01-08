@@ -82,3 +82,7 @@ alias away='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resourc
 
 # Add GNU core utils from Homebrew to the path
 which brew &> /dev/null && export PATH="$(brew --prefix coreutils)/libexec/gnubin:${PATH}"
+
+# Force locale
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
