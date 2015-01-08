@@ -9,6 +9,7 @@
   keepBackup = true
 [core]
 	editor = vim
+	excludesfile = /Users/erwin/.gitignore_global
 [color]
   ui = auto
 

@@ -28,6 +28,7 @@ set wildmenu
 set cursorline
 set relativenumber
 set encoding=utf-8
+set colorcolumn=120
 
 set expandtab
 set tabstop=2

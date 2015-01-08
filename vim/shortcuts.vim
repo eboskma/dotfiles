@@ -1,7 +1,7 @@
 noremap <space> <Nop>
 let mapleader = " "
 
-noremap <leader>a :Ack
+noremap <leader>a :Ack<space>
 
 noremap <leader><space> :noh<cr>
 
@@ -19,6 +19,8 @@ noremap <leader>] :tabn<cr>
 noremap <leader>n :tabnew<cr>
 
 noremap <leader>t :CtrlP<cr>
+
+noremap <leader>R :source %<cr>
 
 map <leader>rc :call RunCurrentSpecFile()<cr>
 map <leader>rn :call RunNearestSpec()<cr>

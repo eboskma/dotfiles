@@ -2,6 +2,7 @@ let NERDTreeMinimalUI=1
 let NERDTreeAutoDeleteBuffer=1
 let g:NERDTreeChDirMode=2
 let g:NERDTreeWinPos="right"
+let g:NERDTreeWinSize=60
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 let g:ctrlp_use_caching=0

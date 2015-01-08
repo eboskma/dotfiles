@@ -23,7 +23,7 @@ windows:
       layout: acd8,318x75,0,0[318x57,0,0,0,318x17,0,58{159x17,0,58,2,158x17,160,58,3}]
       panes:
         - vim
-        - pry
+        - guard
         - pry
 #  - console:
 #      panes:
