@@ -44,3 +44,5 @@
 	defaultCommand = status -bs
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
+[hub]
+	protocol = https
