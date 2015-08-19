@@ -44,7 +44,6 @@ if [ -d $HOME/AWS ]; then
 	export AWS_SNS_HOME=$HOME/AWS/sns
 	export AWS_RDS_HOME=$HOME/AWS/rds
 	export AWS_IAM_HOME=$HOME/AWS/iam
-	export AWS_CREDENTIAL_FILE=/Users/erwin/.ec2/aws-credentials
 	export AWS_AUTOSCALING_URL=https://autoscaling.eu-west-1.amazonaws.com
 
 	#Customize to your needs...
@@ -52,6 +51,7 @@ if [ -d $HOME/AWS ]; then
 
   zstyle :omz:plugins:ssh-agent identities id_rsa yb gsg-keypair node-keypair
 fi
+export AWS_CREDENTIAL_FILE=/Users/erwin/.ec2/aws-credentials
 
 PATH=/usr/local/share/npm/bin:/usr/local/sbin:/usr/local/lib/node_modules:$HOME/bin:$HOME/.local/bin:$PATH
 bindkey '\e.' insert-last-word

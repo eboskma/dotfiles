@@ -1,3 +1,8 @@
 ---
 BUNDLE_BUILD__LIBV8: "--with-system-v8"
 BUNDLE_JOBS: '4'
+BUNDLE_DISABLE_MULTISOURCE: 'true'
+BUNDLE_GEM__TEST: 'false'
+BUNDLE_GEM__COC: 'false'
+BUNDLE_GEM__MIT: 'false'
+BUNDLE_BUILD__MYSQL: "--with-mysql-config=/usr/local/bin/mysql_config"

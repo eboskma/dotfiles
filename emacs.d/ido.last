@@ -2,21 +2,30 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/erwin/Projects/clojure-noob/src/" . "clojure_noob/")
  ("/Users/erwin/.emacs.d/" . "customizations/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/erwin/Projects/clojure-noob/src/clojure_noob/"
  "/Users/erwin/.emacs.d/customizations/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "core.clj"
  "ui.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/Users/erwin/Projects/clojure-noob/src/clojure_noob/" (21683 49454 0 0) "core.clj" "../" "./")
+
+ ("/Users/erwin/Projects/clojure-noob/" (21683 49275 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" ".nrepl-port" ".gitignore" "../" "./")
+
+ ("/Users/erwin/Projects/clojure-noob/src/" (21683 39844 0 0) "clojure_noob/" "../" "./")
+
  ("/Users/erwin/.emacs.d/customizations/" (21677 48213 0 0) "ui.el" "themes.el" "shell-integration.el" "setup-js.el" "setup-clojure.el" "navigation.el" "misc.el" "elisp-editing.el" "editing.el" "../" "./")
 
  ("/Users/erwin/.emacs.d/" (21677 50591 0 0) "themes/" "README.md" "places" "init.el" "elpa/" "customizations/" ".smex-items" ".recentf" ".gitignore" ".git/" "../" "./")
