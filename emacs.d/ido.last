@@ -2,35 +2,69 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/erwin/Projects/private/braveclojure/clojure-noob/" . "src/")
+ ("/Users/erwin/.dotfiles/emacs.d/" . "customizations/")
+ ("/Users/erwin/" . ".emacs.d/")
+ ("/Users/erwin/Projects/private/braveclojure/" . "clojure-noob/")
+ ("/Users/erwin/Projects/private/" . "braveclojure/")
+ ("/Users/erwin/Projects/private/braveclojure/clojure-noob/src/" . "clojure_noob/")
  ("/Users/erwin/Projects/clojure-noob/src/" . "clojure_noob/")
  ("/Users/erwin/.emacs.d/" . "customizations/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/erwin/Projects/clojure-noob/src/clojure_noob/"
+ "/Users/erwin/Projects/private/braveclojure/clojure-noob/src/clojure_noob/"
+ "/Users/erwin/Projects/private/braveclojure/clojure-noob/"
  "/Users/erwin/.emacs.d/customizations/"
+ "/Users/erwin/.dotfiles/emacs.d/"
+ "/Users/erwin/.dotfiles/emacs.d/customizations/"
+ "/Users/erwin/.emacs.d/"
+ "/Users/erwin/Projects/clojure-noob/src/clojure_noob/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "hobbit.clj"
  "core.clj"
+ "project.clj"
+ "editing.el"
+ "init.el"
+ "setup-clojure.el"
  "ui.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/Users/erwin/Projects/private/braveclojure/clojure-noob/" (21972 37272 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" ".lein-repl-history" ".hgignore" ".gitignore" "../" "./")
+
+ ("/Users/erwin/.emacs.d/" (21972 35755 0 0) "themes/" "README.md" "projectile-bookmarks.eld" "places" "init.el" "ido.last" "elpa/" "customizations/" "cider-history" "backups/" "auto-save-list/" ".smex-items" ".recentf" ".gitignore" "../" "./")
+
+ ("/Users/erwin/" (21972 35756 0 0) "zm2_comma.csv" "zm2.xlsx" "zm2.numbers" "zm2.csv" "zencoder_output.rb" "ybprime-0.4.15-Linux.deb" "yb_yellow" "yb_logo_icon.png" "yb.nl.pem" "yb-ssl/" "yb icon.sketch/" "xnoizz-gungor-beautiful-things_2000x1000_3500kbit.mp4" "xml/" "xaa" "wowza.zip" "wordpress/" "women_moods.jpg" "wireshark_captures/" "weekend_bitches/" "VPRO Player/" "vpro/" "volmaaktemens.mp4" "VirtualBox VMs/" "victorinox-screenshot.png" "Verlofaanvraagformulier 38-12-2015 - 31-12-2015.pdf" "Verlofaanvraagformulier 07-09-2015 - 11-09-2015.pdf" "Verlof Erwin Boskma 23-01-2015.pdf" "vapoursynth-mvtools.tar.gz" "vapoursynth-mvtools-9/" "vapoursynth/" "vakantie.xlsx" "utopia-turkey.zip" "utopia-germany.zip" "upton.mp4" "upton.gif" "upgrade-test/" "uniworld/" "toyota.mp4" "topman/" "tmp/" "timelapse.mp4" "Thumb.png" "Therapy_Teaser_hls_3000.mp4" "TEDx_screen.png" "tatasteel/" "svunit037.packages" "svunit030.packages" "svstream_siege.txt" "SVRiftPlayer133NOS.dmg" "SVAPI/" "sv_shell" "SV_screen_test.png" "SV_Logo_trans.png" "sv_logo_reduced.png" "SV_Logo.psd" "SV_Logo.png" "sv.json" "sv-test.html" "sv-embed.html" "SV Player/" "SV meeting notes 14-05-2013.pages/" "SurroundVideoSDK.framework/" "SurroundVideoSDK-1.0.zip" "surroundVideo_logoKleur.eps" "surroundvideo-ssl.tar.gz" "surroundvideo-ssl/" "stream.52_conv.mp4" "stream.51.mp4" "Steye & The Bizonkid - What Do We Care 4.mp4" "steye/" "spotify.rb" "sonos.pcapng.gz" "snmp-mibs" "Sites/" "Site/" "siege.log" "Showreel-2013-v5.mp4" "Showreel-2013-v5.f4v" "shipyard.json" "shangrila/" "Shangri-La - Singapore Rhasa Sentosa.mp4" "server_stdout.log" "server_stderr.log" "schedule.rb" "samsungvr_AE_V001.mp4" "Samsung 360 Tours (Trailer).pvr" "Samsung/" "s3_download.rb" "rockpigeon_latest.swf" "resin-cli/" "recreate_versions.rb" "react-native-videos/" "react-native-downloader.js" "react-native-basic-ios-routing.bin" "radiotime-browse-local.json" "Public/" "Projects/" "printqueue/" "practical-vim/" "pocket_url_importer/" "pocket_callback.rb" "pocket-ruby/" "pino-2015-06-22/" "pino/" "Pictures/" "orange-tent.mp4" "open_in_chrome.scpt" "onroad-main-image@2x.png" "onroad-main-image.png" "ohai.json" "offroad-main-image@2x.png" "offroad-main-image.png" "NoordZuidLijn_Final_SV.mp4" "node_tts/" "node-v0.12.0-linux-x64.tar.gz" "nginx.tar.gz" "negative_image.jpg" "Native_Alps_V6_FR.f4v" "Nascar.f4v" "mysql-init" "my-reverse.clj" "mute_ezra/" "Music/" "Movies/" "motion_ocean-0.1.1.gem" "MonoFramework-MDK-3.12.1.macos10.xamarin.x86.pkg" "mini-hotspot-urls" "Messier57-Ring_Nebula.jpg" "maik_hannah.jpg" "louis-vuitton-boy-swimming.mp4" "logo_yellowBirdv1.eps" "logo_yellowBirdv1 kopie.pdf" "Library/" "LHASA_EN.mp4" "letsencrypt/" "Kitematic/" "kia-ceed_2000x1000_4000kbit.mp4" "kia/" "KasabianBTS_Master_V1_hls_3000.mp4" "KasabianBTS_Master_V1.f4v" "Kasabian.mp4" "Justinmind/" "jest-test/" "iOS-Surround-Video/" "interpolation_test/" "install_npm.sh" "id_rsa_joep.pub" "icecast/" "homebridge/" "harrypotter/" "Harry Potter Main_Amends.mp4" "Harry Potter Main_Amends.f4v" "grid-comp.mp4" "grid-comp.f4v" "gopro_sort.rb" "Google Drive/" "gogs.png" "Glyphish 6/" "geminabox/" "ge_mri.mp4" "game/" "fullscreen.scpt" "fs_lola.zip" "fs_lola/" "friso-app.yb.nl/" "friso-app.htpasswd" "FrieslandCampina/" "France Montagne - Les Alps.mp4" "foxsports/" "foo/" "final commercial high res_30sec.mov" "figlet-showcase.txt" "ffmpeg-2.6.3.tar.bz2" "feedly_saved_for_later.json" "favicon.ico" "expedition-robinson-mensrip-tour.mp4" "expedition-robinson-mensrip-tour-yuv422p.mp4" "exercism/" "eventmachine/" "Episode_23_-_MotionKit_Basics_and_AutoLayout.mp4" "engineer.jpg" "emscripten_webgl_simmer_gently/" "edit_v5.f4v" "DutchLady_Short.mp4" "Dropbox/" "drone/" "Downloads/" "dogecoin-miner.tar.xz" "Documents/" "docker_images.pdf" "distribute_setup.py" "distribute-0.6.14.tar.gz" "DiscoRunner/" "DevCA/" "desktop.scpt" "Desktop/" "Demos/" "deis/" "Dataverbruik NOS Prinsjesdag.numbers" "crontab.rb" "coreos-vagrant/" "coreos-cloudinit/" "constant.rb" "compose_overlay_gradients.png" "colors.pl" "collectd-5.4.1.tar.bz2" "ci_datarift_nl.tar.xz" "chrome_to_safari.scpt" "Chrome-DevTools.app.zip" "chef-mariadb/" "ChatStorage.sqlite" "car-brands" "capitola_film_cropped.f4v" "canarymod/" "Bootcamp Info.plist" "Bonnen Noorderslag.pdf" "block.png" "bin/" "BesiegeMachines/" "band.png" "aws_config.json" "Applications/" "api-kickstart/" "americancrew/" "alter.sql" "alarm.mp3" "akamai-test/" "Adlm/" "76453_KB%20Atlas_WL1024-1_02-2013.pdf" "50807208070.append.flv" "32_Singapore_Sentosa_v5.f4v" "2201/" "20141120 noordzuidlijn werken in de tunnel spoor [Ge Dubbelman] (1).jpg" "130608_tempescope_CAD_part2_of_2_r2.svg" "130608_tempescope_CAD_part1_of_2_r2.svg" "02_FINAL_18_2_14.f4v" ".zshrc" ".zshenv" ".zsh_history" ".zsh-update" ".zcompdump-MacBook-Pro-van-Erwin-Boskma-2-5.0.2.MacBook-Pro-van-Erwin-Boskma-2.local.32123" ".zcompdump-MacBook Pro van Erwin Boskma-5.0.2" ".zcompdump-MacBook Pro van Erwin Boskma-4.3.11" ".zcompdump-MacBook Pro van Erwin Boskma (2)-5.0.2" ".zcompdump-Erwin Boskma's MacBook Pro-5.0.5" ".zcompdump-Erwin Boskma's MacBook Pro-5.0.2" ".zcompdump-Erwin Boskma's MacBook Pro (2)-5.0.5" ".zcompdump--5.0.2" ".zcompdump" ".youtrack4.0/" ".yard/" ".Xauthority" ".wsgtzxin" ".wireshark/" ".vimrc" ".viminfo" ".vim/" ".vagrant.d/" ".v8flags.4.2.77.20.erwin.json" ".v8flags.3.28.71.19.erwin.json" ".trc" ".Trash/" ".tmuxinator/" ".tmux.conf" ".tm_properties" ".thumbnails/" ".thefuck/" ".teamocil/" ".swt/" ".swfinfo" ".subversion/" ".ssh/" ".sqlite_history" ".sockets/" ".smashbattle" ".sl-excel-export.csv" ".siegerc" ".serverauth.59419" ".scorched3d/" ".rubocop.yml" ".rnd" ".resin/" ".rediscli_history" ".redcar/" ".README.md" ".rcrc" ".rbx/" ".rbenv-shim" ".rbenv/" ".railsrc" ".python-eggs/" ".pvrconfig/" ".putty/" ".psql_history" ".pryrc" ".pry_history" ".pry/" ".powconfig" ".pow/" ".plexht/" ".plex/" ".pip/" ".phantomjs/" ".oh-my-zsh/" ".npmrc" ".npm/" ".node-gyp/" ".node/" ".netrc" ".NERDTreeBookmarks" ".mysql_history" ".mpdconf" ".mpd/" ".mono/" ".mongorc.js" ".mjolnir/" ".minecraft/" ".meteorsession" ".meteorite/" ".matplotlib/" ".MacOSX/" ".m2/" ".local/" ".lldb-history" ".LICENSE" ".letsencrypt/" ".lesshst" ".lein/" ".lapse-dDWB" ".kodi/" ".keybase-installer/" ".keybase/" ".juju/" ".juefomvrc" ".jspm/" ".jrubyrc" ".itmstransporter/" ".irb_history" ".ipython/" ".install.sh" ".inkscape-etc/" ".htoprc" ".hgignore_global" ".heroku/" ".hammerspoon/" ".guard_history" ".guard.rb" ".gopkg/" ".gnupg/" ".gnome2/" ".gitsh_history" ".gitignore_global" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".gdb_history" ".frameit/" ".forever/" ".fontconfig/" ".exercism.json" ".exercism" ".emscripten_sanity" ".emscripten_cache/" ".emscripten" ".emacs.d/" ".electrum/" ".electron/" ".egcurl" ".ec2/" ".DS_Store" ".dropbox/" ".dotfiles/" ".dockercfg" ".docker/" ".dir_colors" ".dbshell" ".datastorage/" ".curl-time" ".cups/" ".cruise/" ".configprops/" ".config/" ".coffee_history" ".cocoapods/" ".chef/" ".cheat/" ".CFUserTextEncoding" ".cf/" ".cache/" ".bzr.log" ".bundle/" ".Brewfile" ".bower/" ".boot2docker/" ".berkshelf/" ".belastingdienst.nl/" ".bash_profile" ".bash_history" ".babel.json" ".aws/" ".atom/" ".ansible/" ".af_token" ".af_instances" ".adobe/" ".ackrc" "../" "./")
+
+ ("/Users/erwin/Projects/private/braveclojure/clojure-noob/src/clojure_noob/" (21972 35797 0 0) "core.clj" "../" "./")
+
+ ("/Users/erwin/.dotfiles/emacs.d/" (21972 35364 0 0) "themes/" "README.md" "projectile-bookmarks.eld" "places" "init.el" "ido.last" "elpa/" "customizations/" "cider-history" "backups/" "auto-save-list/" ".smex-items" ".recentf" ".gitignore" "../" "./")
+
+ ("/Users/erwin/.dotfiles/emacs.d/customizations/" (21972 32254 0 0) "ui.el" "themes.el" "shell-integration.el" "setup-js.el" "setup-clojure.el" "navigation.el" "misc.el" "elisp-editing.el" "editing.el" "../" "./")
+
+ ("/Users/erwin/.emacs.d/customizations/" (21972 32254 0 0) "ui.el" "themes.el" "shell-integration.el" "setup-js.el" "setup-clojure.el" "navigation.el" "misc.el" "elisp-editing.el" "editing.el" "../" "./")
+
+ ("/Users/erwin/Projects/" (21965 55202 0 0) "yb-timelapse_2/" "yb-timelapse/" "yb-signature/" "yb-livestream/" "yb-docker-images/" "wtflexbox/" "web_pigeon/" "VPRO-SV-Android/" "VPRO VR/" "versions/" "transcode/" "tmp/" "timesheet.js/" "test/" "SVTest/" "svstream-test-go/" "svplayer/" "sv_no_sprockets.contents" "sv_no_sprockets/" "sv.contents" "sv-layout/" "sv-ios/" "sv/" "surroundvideostream/" "SurroundVideoSDK/" "SurroundVideo-iOS/" "surroundvideo/" "stop-button.tar.gz" "stop-button-server.tar.gz" "stop-button-server/" "stop-button/" "steroidpigeon/" "standalone-player/" "rspec-web/" "RockPigeonSDK/" "repos/" "react-skel/" "py-skel/" "private/" "Porsche-iOS/" "poc-mini-mobile-stills/" "playground/" "mini-stills/" "mini/" "MetalTest/" "MediaPlayer/" "manifest.json" "management-server/" "labs/" "iOS-Surround-Video.xcarchive/" "iOS-Surround-Video/" "iOS-SDK/" "iOS-Budweiser-360/" "img_test/" "images/" "html5_player-original/" "html5_player-new/" "html5_player/" "html5-live/" "graphql-server/" "gem_template/" "gallery/" "functional_js/" "errors/" "emscripten_test/" "email-signature/" "docker-squash/" "docker/" "DOBucket/" "deployd-react-todo/" "chef-repo/" "bu-test/" "bootstrap_app.rb/" "aws-stats/" "authbuttons/" "akamai/" ".DS_Store" "../" "./")
+
+ ("/Users/erwin/Projects/private/braveclojure/" (21972 31148 0 0) "clojure-noob/" "../" "./")
+
+ ("/Users/erwin/Projects/private/braveclojure/clojure-noob/src/" (21972 31148 0 0) "clojure_noob/" "../" "./")
+
+ ("/Users/erwin/Projects/private/" (21972 23113 0 0) "udemy/" "shipyard-test/" "sabremote/" "roman/" "resume/" "react-clock/" "rack-jwt.tar.xz" "rack-jwt/" "parens-of-the-dead/" "motion_ocean_new/" "motion_ocean/" "motion_gem_template/" "icebox/" "groningen-rb/" "erwinboskma.nl/" "doorbell/" "code-golf-2014/" "coachable_ios/" "coachable/" "cf_dynamic_ip/" "braveclojure/" "boskma.frl/" ".DS_Store" "../" "./")
+
+ ("/Users/" (21574 50352 0 0) "Shared/" "Guest/" "erwin/" ".localized" "../" "./")
+
  ("/Users/erwin/Projects/clojure-noob/src/clojure_noob/" (21683 49454 0 0) "core.clj" "../" "./")
 
  ("/Users/erwin/Projects/clojure-noob/" (21683 49275 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" ".nrepl-port" ".gitignore" "../" "./")
 
  ("/Users/erwin/Projects/clojure-noob/src/" (21683 39844 0 0) "clojure_noob/" "../" "./")
-
- ("/Users/erwin/.emacs.d/customizations/" (21677 48213 0 0) "ui.el" "themes.el" "shell-integration.el" "setup-js.el" "setup-clojure.el" "navigation.el" "misc.el" "elisp-editing.el" "editing.el" "../" "./")
-
- ("/Users/erwin/.emacs.d/" (21677 50591 0 0) "themes/" "README.md" "places" "init.el" "elpa/" "customizations/" ".smex-items" ".recentf" ".gitignore" ".git/" "../" "./")
-
- ("/Users/erwin/" (21677 50610 0 0) "website.retry" "VirtualBox VMs/" "Video/" "user-cover.png" "user-cover-orig.png" "upgrade-test/" "uninstall.sh" "tmp/" "test.txt" "TeamViewer.dmg" "src/" "skin.refocus_for_plex_back_to_blue_edition/" "Sites/" "shutdown.scpt" "save_all.scpt" "rubinius-2.2.10.tar.bz2" "rubinius-2.2.10/" "Public/" "PreenPlugin2/" "Pictures/" "Peepcode/" "partyrockers.txt" "open_in_chrome.scpt" "nginx/" "Music/" "Movies/" "motioninmotion/" "minecraft/" "mbox" "Library/" "kubecfg" "insecure_private_key" "hydra-licenses/" "hydra/" "ft_flyer_full_5mm_overlap.pdf" "Foto's en filmpjes Stones anko.zip" "fonts/" "fix_whatsapp.sql" "eepe/" "Dropbox/" "Downloads/" "dotfiles/" "dot-tmuxinator/" "dogecoin-miner/" "Documents/" "developer.p12" "Desktop/" "crontab.rb" "construct5_audio3.f4v" "configuration_log.csv" "config_dsl.bin" "companion9x/" "colobot-colobot-gold-0.1.4-alpha/" "Code/" "ChatStorage.sqlite" "canarymod/" "bootstrap_app.rb" "bitmaps/" "bin/" "babes/" "AutoCAD Scripts/" "Atom.tar.xz" "Applications/" "Adlm/" ".zshrc" ".zshenv.local" ".zshenv" ".zsh_history" ".zsh-update" ".zcompdump-zeus-5.0.5" ".zcompdump-zeus-5.0.2" ".Xauthority" ".vimrc" ".viminfo" ".vim/" ".vagrant.d/" ".Trash/" ".tmuxinator/" ".tmux.conf" ".tm_properties" ".teamocil/" ".subversion/" ".ssh/" ".sqlite_history" ".rubies/" ".rnd" ".rediscli_history" ".rbx/" ".rbenv/" ".railsrc" ".psql_history" ".pry_history" ".pry/" ".pow/" ".plexht/" ".plex/" ".oh-my-zsh/" ".npmrc" ".npm/" ".node-gyp/" ".NERDTreeBookmarks" ".mongorc.js" ".meteorsession" ".meteorite/" ".meteor/" ".MacOSX/" ".m2/" ".local/" ".lesshst" ".lein/" ".keybase-installer/" ".keybase/" ".ipython/" ".inputrc" ".hydra/" ".guard_history" ".gnupg/" ".gitsh_history" ".gitconfig" ".gemrc" ".gem/" ".emacs.d/" ".dvdcss/" ".DS_Store" ".dropbox/" ".distlib/" ".dbshell" ".cups/" ".config/" ".cocoapods/" ".cgminer/" ".CFUserTextEncoding" ".cache/" ".bash_history" ".atom/" ".ansible/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----
