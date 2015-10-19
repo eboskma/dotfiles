@@ -69,11 +69,11 @@ fi
 
 # gitignore.io integration
 function gi() {
-	curl -s http://www.gitignore.io/api/$@
+	curl -s https://www.gitignore.io/api/$@
 }
 
 # Include psql from Postgres.app
-export PATH="/Applications/Postgres93.app/Contents/MacOS/bin":$PATH
+export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin":$PATH
 
 export EDITOR=vim
 
@@ -86,3 +86,10 @@ which brew &> /dev/null && export PATH="$(brew --prefix coreutils)/libexec/gnubi
 # Force locale
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+if [ -d "$HOME/.rbenv" ]
+then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
+
