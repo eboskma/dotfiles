@@ -41,7 +41,8 @@ Plugin 'editorconfig/editorconfig-vim'
 
 " Look-and-feel stuff
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 source $HOME/.vim/colors.vim
 source $HOME/.vim/config.vim
