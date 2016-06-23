@@ -61,9 +61,5 @@
 	prompt = false
 [difftool "delta"]
 	cmd = delta \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
-[github]
-	site = https://github.com
-	endpoint = https://api.github.com
-	oauth-token = 756d15f391795da219f3370d3eb3c654c8b19474
 [reflow]
 	git-server = GitHub
