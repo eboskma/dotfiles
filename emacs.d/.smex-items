@@ -1,0 +1,27 @@
+
+;; ----- smex-history -----
+(
+ cider-jack-in
+ package-list-packages
+ package-install
+ yas-minor-mode
+ eval-buffer
+ package-refresh-contents
+ package-menu-mark-upgrades
+)
+
+;; ----- smex-data -----
+(
+ (package-list-packages . 10)
+ (package-refresh-contents . 7)
+ (cider-jack-in . 4)
+ (package-install . 5)
+ (replace-string . 1)
+ (undo . 1)
+ (package-menu-mark-upgrades . 2)
+ (package-menu-mode . 1)
+ (list-packages . 1)
+ (eval-buffer . 3)
+ (yas-minor-mode . 1)
+ (paredit-forward-slurp-sexp . 1)
+)
