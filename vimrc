@@ -49,7 +49,7 @@ source $HOME/.vim/config.vim
 source $HOME/.vim/plugins.vim
 source $HOME/.vim/shortcuts.vim
 source $HOME/.vim/statusline.vim
-source $HOME/.vim/tabs.vim
+" source $HOME/.vim/tabs.vim
 source $HOME/.vim/autocommands.vim
 
 filetype plugin indent on
