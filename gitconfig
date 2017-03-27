@@ -29,7 +29,7 @@
 [alias]
   ls = ls-files
   ignored = ls-files -o -i --exclude-standard
-  stat = status -s
+  st = status -s -b
   branches = branch -a
   tags = tag
   stashes = stash list
@@ -45,8 +45,6 @@
 	defaultCommand = status -bs
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
-[hub]
-	protocol = https
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -63,3 +61,7 @@
 	cmd = delta \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
 [reflow]
 	git-server = GitHub
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true

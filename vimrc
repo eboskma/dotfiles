@@ -2,11 +2,11 @@ set nocompatible
 filetype off
 
 " Initialize Vundle
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 
 " Required
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " Ruby/Rails
 Plugin 'vim-ruby/vim-ruby'
