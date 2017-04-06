@@ -1,6 +1,7 @@
 [user]
   name = Erwin Boskma
   email = erwin@datarift.nl
+	signingkey = 8A32C109741A30EA
 [credential]
   helper = osxkeychain
 [push]
@@ -65,3 +66,8 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	required = true
+[merge]
+	ff = only
+	conflictstyle = diff3
+[commit]
+	gpgSign = true
