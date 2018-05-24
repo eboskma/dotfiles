@@ -14,3 +14,13 @@ let g:airline_solarized_bg="dark"
 let g:airline_theme="solarized"
 
 let g:airline#extensions#whitespace#show_message = 0
+
+let g:deoplete#sources#clang#libclang_path = '/usr/local/llvm-6.0/lib/libclang.so'
+let g:deoplete#sources#clang#clang_header  = '/usr/local/llvm-6.0/lib/clang'
+let g:deoplete#sources#clang#std#cpp = 'c++17'
+
+let g:deoplete#omni#input_patterns = {}
+set completeopt=noselect,menuone,longest
+let g:deoplete#enable_at_startup = 1
+"let g:deoplete#disable_auto_complete = 1
+let g:deoplete#enable_smart_case = 1

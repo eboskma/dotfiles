@@ -1,8 +1,7 @@
-/vim/tmp/*
-!/vim/tmp/.keep
-/vim/undo/*
-!/vim/undo/.keep
-/vim/bundle.smex-items
+/vim/.vim/tmp/*
+!/vim/.vim/tmp/.keep
+/vim/.vim/undo/*
+!/vim/.vim/undo/.keep
 *~$
 places
 .recentf

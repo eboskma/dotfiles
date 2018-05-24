@@ -26,3 +26,6 @@ map <leader>rc :call RunCurrentSpecFile()<cr>
 map <leader>rn :call RunNearestSpec()<cr>
 map <leader>rl :call RunLastSpec()<cr>
 map <leader>ra :call RunAllSpecs()<cr>
+
+imap <C-@> <C-Space>
+inoremap <silent><expr> <C-Space> deoplete#mappings#manual_complete()

@@ -31,6 +31,10 @@ if dein#load_state('/home/erwin/.cache/dein')
 
 
   call dein#add('Shougo/deoplete.nvim')
+  if !has('nvim')
+    call dein#add('roxma/nvim-yarp')
+    call dein#add('roxma/vim-hug-neovim-rpc')
+  endif
   call dein#add('zchee/deoplete-clang')
   call dein#add('Shougo/neoinclude.vim')
   call dein#add('altercation/vim-colors-solarized')
