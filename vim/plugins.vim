@@ -10,6 +10,7 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|tmp\|log\|bower_compon
 
 let g:rspec_command="Dispatch rspec {spec}"
 
-let g:airline_theme="tomorrow"
+let g:airline_solarized_bg="dark"
+let g:airline_theme="solarized"
 
 let g:airline#extensions#whitespace#show_message = 0
