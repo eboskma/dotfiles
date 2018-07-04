@@ -3,7 +3,7 @@ let NERDTreeAutoDeleteBuffer=1
 let g:NERDTreeChDirMode=2
 let g:NERDTreeWinPos="right"
 let g:NERDTreeWinSize=60
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 let g:ctrlp_use_caching=0
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|tmp\|log\|bower_components'
@@ -24,3 +24,4 @@ set completeopt=noselect,menuone,longest
 let g:deoplete#enable_at_startup = 1
 "let g:deoplete#disable_auto_complete = 1
 let g:deoplete#enable_smart_case = 1
+

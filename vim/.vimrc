@@ -77,3 +77,5 @@ source $HOME/.vim/statusline.vim
 source $HOME/.vim/autocommands.vim
 
 filetype plugin indent on
+
+silent! source .vimlocal

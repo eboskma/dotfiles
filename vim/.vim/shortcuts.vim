@@ -27,5 +27,7 @@ map <leader>rn :call RunNearestSpec()<cr>
 map <leader>rl :call RunLastSpec()<cr>
 map <leader>ra :call RunAllSpecs()<cr>
 
+nnoremap <F7> :Dispatch<CR>
+
 imap <C-@> <C-Space>
 inoremap <silent><expr> <C-Space> deoplete#mappings#manual_complete()
