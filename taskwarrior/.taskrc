@@ -25,7 +25,12 @@ data.location=~/.task
 #include /usr/share/taskwarrior/dark-yellow-green.theme
 #include /usr/share/taskwarrior/dark-gray-256.theme
 #include /usr/share/taskwarrior/dark-gray-blue-256.theme
-#include /usr/share/taskwarrior/solarized-dark-256.theme
+include /usr/share/taskwarrior/solarized-dark-256.theme
 #include /usr/share/taskwarrior/solarized-light-256.theme
 #include /usr/share/taskwarrior/no-color.theme
 
+taskd.certificate=/home/erwin/.task/erwin_boskma.cert.pem
+taskd.key=/home/erwin/.task/erwin_boskma.key.pem
+taskd.ca=/home/erwin/.task/ca.cert.pem
+taskd.server=tasks.datarift.nl:53589
+taskd.credentials=Datarift/Erwin Boskma/3be4ef8a-f7d6-4633-9970-efaf08418e23
