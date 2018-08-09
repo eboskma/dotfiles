@@ -45,6 +45,7 @@
   ign = ls-files -o -i --exclude-standard
   stat = status -s
   up = pull --autostash --rebase
+  cm = commit -m
 [gitsh]
 	defaultCommand = status -bs
 [gpg]
