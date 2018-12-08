@@ -47,16 +47,9 @@
   up = pull --autostash --rebase
   cm = commit -m
   changelog = log --oneline --no-merges
+  cms = commit -S -m
 [gitsh]
   defaultCommand = status -bs
-[gpg]
-  program = /usr/local/bin/gpg
-[difftool "sourcetree"]
-  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path = 
-[mergetool "sourcetree"]
-  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  trustExitCode = true
 [git-up "bundler"]
   check = true
 [diff]
@@ -72,11 +65,13 @@
   smudge = git-lfs smudge -- %f
   required = true
 [merge]
-  ff = only
-  conflictstyle = diff3
-[commit]
-  gpgsign = true
+	ff = only
+	conflictstyle = diff3
 [pull]
 	rebase = true
 [rebase]
 	autoStash = true
+[gpg]
+	program = /usr/bin/krgpg
+[tag]
+	forceSignAnnotated = true

@@ -15,8 +15,8 @@ let g:airline_theme="solarized"
 
 let g:airline#extensions#whitespace#show_message = 0
 
-let g:deoplete#sources#clang#libclang_path = '/usr/local/llvm-6.0/lib/libclang.so'
-let g:deoplete#sources#clang#clang_header  = '/usr/local/llvm-6.0/lib/clang'
+let g:deoplete#sources#clang#libclang_path = '/usr/lib/llvm-6.0/lib/libclang.so'
+let g:deoplete#sources#clang#clang_header  = '/usr/lib/llvm-6.0/lib/clang'
 let g:deoplete#sources#clang#std#cpp = 'c++17'
 
 let g:deoplete#omni#input_patterns = {}
