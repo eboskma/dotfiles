@@ -1,16 +1,16 @@
 [user]
   name = Erwin Boskma
   email = erwin@datarift.nl
-	signingkey = 8A32C109741A30EA
+  signingkey = BB8868C0A14171EC3CEDFDA78A32C109741A30EA
 [credential]
   helper = osxkeychain
 [push]
-	default = matching
+  default = matching
 [mergetool]
   keepBackup = true
 [core]
-	editor = vim
-	excludesfile = /Users/erwin/.gitignore_global
+  editor = vim
+  excludesfile = ~/.gitignore_global
 [color]
   ui = auto
 
@@ -46,32 +46,37 @@
   stat = status -s
   up = pull --autostash --rebase
   cm = commit -m
+  changelog = log --oneline --no-merges
 [gitsh]
-	defaultCommand = status -bs
+  defaultCommand = status -bs
 [gpg]
-	program = /usr/local/MacGPG2/bin/gpg2
+  program = /usr/local/bin/gpg
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
 [git-up "bundler"]
-	check = true
+  check = true
 [diff]
-	tool = delta
+  tool = delta
 [difftool]
-	prompt = false
+  prompt = false
 [difftool "delta"]
-	cmd = delta \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+  cmd = delta \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
 [reflow]
-	git-server = GitHub
+  git-server = GitHub
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  required = true
 [merge]
-	ff = only
-	conflictstyle = diff3
+  ff = only
+  conflictstyle = diff3
 [commit]
-	gpgSign = true
+  gpgsign = true
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
