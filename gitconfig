@@ -49,7 +49,18 @@
   changelog = log --oneline --no-merges
   cms = commit -S -m
 [gitsh]
-  defaultCommand = status -bs
+	defaultCommand = status -bs
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[gpg]
+	program = /usr/local/bin/krgpg
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 [git-up "bundler"]
   check = true
 [diff]
